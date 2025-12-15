@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First HTML File</title>
+</head>
+<!--
+    div = normal tag
+    .div = class tag
+    #div = id tag
+-->
+<style>
+    .red {
+        color: red;
+    }
+
+    .large {
+        font-size: 96px;
+    }
+
+    .blue {
+        color: blue;
+    }
+</style>
+<!--
+    h1-h6 = heading
+    p = paragraph
+-->
+<body>
+<div>
+    <!--    Heading -->
+    <h1 class="large blue">Hello World!</h1>
+    <!--    Paragraph -->
+    <p class="red">This is my first HTML file!</p>
+    <!--    Link -->
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <!--   Button -->
+    <button>Click Me</button>
+    <!--   Button with Link -->
+    <a href="https://www.google.com" target="_blank">
+        <button>Link as Button</button>
+    </a>
+    <br>
+    <br>
+    <!--   Label & Input -->
+    <label for="name">Name</label>
+    <!--    <input type="file" id="name" placeholder="Enter your name" accept="image/png, image/jpeg">-->
+    <!--    <input type="number" id="name" placeholder="Enter your name" min="10" max="20" step="5">-->
+    <input type="text" id="name" placeholder="Enter your name">
+    <!--   Code tag - only changes the font to monospace -->
+    <code>console.log("Hello world")</code>
+    <br>
+    <!--   Text formatting -->
+    <em>Hello</em>
+    <i>Hello</i>
+
+    <b>Hello</b>
+    <strong>Hello</strong>
+
+    <s>Hello</s>
+
+    <u>Hello</u>
+
+    <br>
+    <br>
+    <!--   Image & Audio & Video -->
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="200" height="200">
+    <img src="images/rv_there_yet.jpg" height="353" width="616" alt="RV There Yet"/>
+    <audio src="" muted controls></audio>
+    <video src="videos/Baldur's%20Gate%203%202025.12.13%20-%2023.24.23.78.mp4" width="400" height="200" muted
+           controls></video>
+    <iframe src="https://youtu.be/n_SwUqNigGo?si=-aBXhN8QrTpRGQZ0"></iframe>
+</div>
+</body>
+</html>
