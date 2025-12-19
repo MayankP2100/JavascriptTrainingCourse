@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+</head>
+<style>
+    /* !important = max priority */
+    td {
+        border: 2px solid red !important;
+        color: blue;
+    }
+
+    table, th, td {
+        border: 1px solid;
+        padding: 10px;
+        border-collapse: collapse;
+    }
+
+    a {
+        border: 1px solid;
+        padding: 10px;
+        background-color: blanchedalmond;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+    }
+
+    a:hover {
+        background-color: aqua;
+        /*padding: 50px;*/
+        color: red;
+        /* Animation duration */
+        transition: 200ms;
+        cursor: default;
+    }
+
+    /* This comes before the link text */
+    a:before {
+        content: "Go to ";
+        color: green;
+    }
+
+    /* This comes after the link text */
+    a:after {
+        content: " page";
+        color: red;
+    }
+</style>
+<body>
+<h1>This is About page</h1>
+
+<!-- Navigation bar -->
+<nav>
+    <!-- Hyperlink -->
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<br>
+<br>
+
+<table>
+    <!-- Table header -->
+    <thead>
+    <!-- Table row -->
+    <tr>
+        <!-- Table head cell -->
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+    </tr>
+    </thead>
+    <!-- Table body -->
+    <tbody>
+    <tr>
+        <td>Mayank Pal</td>
+        <td>21</td>
+        <td>Male</td>
+    </tr>
+    <tr>
+        <td>John Doe</td>
+        <td>26</td>
+        <td>Male</td>
+    </tr>
+    <tr>
+        <td>Jane Doe</td>
+        <td>32</td>
+        <td>Female</td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- List -->
+<!-- Ordered list - <ol> -->
+<!-- Unordered list - <ul> -->
+<!-- List item - <li> -->
+<ol>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+</ol>
+
+<ul>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+</ul>
+
+<footer>
+    <p>This is a footer</p>
+</footer>
+</body>
+</html>

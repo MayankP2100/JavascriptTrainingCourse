@@ -1,0 +1,80 @@
+body {
+    background-color: #d5e1ef;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 320px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 8px 8px;
+}
+
+.card-image {
+    width: 100%;
+    height: 285px;
+    background-color: #2b7dfa;
+    border-radius: 8px;
+}
+
+.card-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.card-description {
+    font-size: 18px;
+    text-align: center;
+    color: #8e9397;
+    padding-bottom: 8px;
+}
+
+/*!* Vertical layout *!*/
+/*.vert {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 16px;*/
+/*}*/
+
+/*!* Horizontal layout *!*/
+/*.horz {*/
+/*    display: flex;*/
+/*    gap: 16px;*/
+/*}*/
+
+/*!* Absolute center *!*/
+/*.center {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    min-height: 100dvh;*/
+/*}*/
+
+/*!* Shadow *!*/
+/*.shadow {*/
+/*    !* horizontal offset | vertical offset | blur radius | color *!*/
+/*    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*!* Square *!*/
+/*.square {*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*}*/
+
+/*!* Circle *!*/
+/*.circle {*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    border-radius: 50%;*/
+/*}*/
