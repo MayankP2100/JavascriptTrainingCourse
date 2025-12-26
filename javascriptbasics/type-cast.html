@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    <!-- Implicit/Coercion type casting -->
+    let name = 56; // starting as number
+    console.log(typeof name);
+    name = true; // automatic conversion to boolean
+    console.log(typeof name);
+
+    // Explicit type casting
+    let age = 21; // starting as number
+    console.log(typeof age);
+    age = String(age); // Manually converting to string
+    console.log(typeof age);
+    age = Number(age); // Changing back to number
+    age = +"2000"; // Using the plus operator
+    console.log(age);
+    console.log(typeof age);
+    age = Number.parseInt("12"); // parse will take only integer values even if there is string or decimal
+    console.log(age);
+    age = Number.parseFloat("2000.0023");
+    console.log(age);
+</script>
+<body>
+
+</body>
+</html>

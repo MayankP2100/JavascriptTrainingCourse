@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    // Array - List of data with index
+    // Essential methods - push, pop, length, includes
+    // Similar to Stack - LIFO - Last In First Out
+
+    let arr1 = new Array(1, 2, 3, 4); // Not recommended
+    let arr2 = [1, 2, 0, 3, 4, 0]; // Recommended - always use this
+
+    console.log(arr2[2]) // Accessing element at index
+
+    // Push - add new element to the end of the array
+    arr2.push(5);
+    console.log(arr2);
+
+    // Pop - remove last element from the array
+    arr2.pop();
+    console.log(arr2);
+
+    // Length - return the number of elements in the array
+    console.log("Size of array:", arr2.length);
+
+    // Includes - check if the array contains a specific element
+    console.log(arr2.includes(2, 1)); // This will output true because 3 is in the array and is at index 2 while the starting index is 1
+
+
+    // Set - List of unique elements
+    let set1 = new Set([1, 2, 3, 4, 5, 5, 5, 5]);
+    console.log(set1); // removes duplicates automatically
+
+    // add() - Add a new element to the set
+    set1.add(6).add(7);
+    console.log(set1);
+
+    // has() - Check if a number is in the set
+    console.log(set1.has(10)); // Returns false as there is no element with value 10 in the set
+
+    // size - return the number of elements in the set
+    console.log("Size of set:", set1.size);
+
+    // Example of using a set to remove duplicates from an array
+    const tempArr = [1, 1, 1, 2, 2, 3, 3, 3];
+
+    const cleanArr = [...new Set(tempArr)]; // Deconstructing the set
+
+    console.log(cleanArr);
+
+    // new Set(tempArr) = [1, 2, 3]
+    // converting to list = [[1, 2, 3]]
+    // deconstructing/flattening the list = [...[1, 2, 3]] = [1, 2, 3]
+
+
+    // Maps - Similar to objects with key-value pairs but keys can be any type of data not just strings
+    const map1 = new Map();
+
+    // set() - Add a new key-value pair to the map
+    map1.set(1, "one").set(2, "two").set("myFunc", function sayHello() {
+        alert("Hello world!")
+    });
+    console.log(map1);
+
+    // get() - Get the value associated with a specific key
+    const myFunc = map1.get("myFunc");
+    // myFunc();
+
+    // has() - Check if a key exists in the map
+    console.log(map1.has("myFunc2"));
+</script>
+<body>
+
+</body>
+</html>

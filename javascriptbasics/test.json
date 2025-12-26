@@ -1,0 +1,30 @@
+{
+  "0": {
+    "name": "Mayank",
+    "age": 21,
+    "hobbies": [
+      "Reading",
+      "Coding"
+    ],
+    "address": {
+      "city": "Bangalore",
+      "state": "Karnataka"
+    },
+    "isMarried": false,
+    "pets": null
+  },
+  "1": {
+    "name": "John",
+    "age": 25,
+    "hobbies": [
+      "Reading",
+      "Coding"
+    ],
+    "address": {
+      "city": "Mumbai",
+      "state": "Maharashtra"
+    },
+    "isMarried": true,
+    "pets": null
+  }
+}
