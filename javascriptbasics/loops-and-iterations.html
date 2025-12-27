@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    // For loop, break, continue - used to iterate over a set of data
+    // print 1 to 20 by step 2
+    for (let i = 1; i <= 20; i = i + 2) {
+        // Skip the number 3
+        if (i === 3) {
+            continue;
+        }
+
+        console.log(i);
+
+        // Stop the loop at 15
+        if (i === 15) {
+            break;
+        }
+    }
+
+    // While loop - used to iterate until a condition is met
+    // Example: Keep asking for password until it matches
+    let j = 0;
+    while (j <= 10) {
+        console.log(j);
+        j++;
+    }
+
+    // Do while loop - used to iterate at least once before checking the condition
+    let k = 20;
+    do {
+        console.log(k);
+        k++;
+    } while (k <= 10);
+
+    // For...of loop - used to iterate over arrays, strings, maps, sets, and objects
+    // Use this to work with values
+    let arr = [1, 2, 3, 4, 5, 6, 7];
+    let str = "Hello    World";
+    let map = new Map([["id", 1], ["email", "john@example.com"]]);
+    let set = new Set(["apple", "banana", "cherry"]);
+    let obj = {name: "Mayank", age: 21};
+
+    // for (let l = 0; l < arr.length; l++) {}
+    for (let l of arr) {
+        console.log(l);
+    }
+
+    for (let m of str) {
+        console.log(m);
+    }
+
+    for (let n of map) {
+        console.log(n);
+    }
+    // [key, value] - key and value of the map is returned as an array and can be used individually like a string
+    for (let [key, value] of map) {
+        console.log(key, value);
+    }
+
+    for (let o of set) {
+        console.log(o);
+    }
+
+    // For...in loop - used to iterate over objects with enumerable (indexed) properties only
+    // It tries to convert everything to an object using index or key if available
+    // Use this to work with keys
+    for (let p in str) {
+        console.log(p, str[p]);
+    }
+
+    for (let q in obj) {
+        console.log(q, obj[q]);
+    }
+
+    for (let r in arr) {
+        console.log(r, arr[r]);
+    }
+</script>
+<body>
+
+</body>
+</html>

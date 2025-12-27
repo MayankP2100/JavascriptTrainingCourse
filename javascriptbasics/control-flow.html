@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+
+    // Control Flow - if, else, switch
+    // Exceptional handling - try, catch, finally
+
+    // If-else statement - run a block of code if a condition is true or false
+    // Use when you have a couple of conditions to check
+    // Else is optional
+    let age = 'abc';
+    if (age >= 18) {
+        console.log("You are welcome");
+    } else if (age < 18) {
+        console.log("You need a guardian");
+    } else {
+        console.log("Something went wrong");
+    }
+
+    // Switch statement - run a block of code based on a condition
+    // Use when you have a lot of conditions to check
+    // Default is optional
+    // Break is required to exit the switch statement
+    let weekday = 'Friday';
+    switch (weekday) {
+        case 'Monday':
+            console.log('Good morning!');
+            break;
+        case 'Tuesday':
+            console.log('Good day!');
+            break;
+        case 'Wednesday':
+            console.log('Good afternoon!');
+            break;
+        case 'Thursday':
+            console.log('Good evening!');
+            break;
+        case 'Friday':
+            console.log('Good night!');
+            break;
+        case 'Saturday':
+            console.log('Good night!');
+            break;
+        case 'Sunday':
+            console.log('Good night!');
+            break;
+        default:
+            console.log('Invalid day!');
+    }
+
+    // Try - Catch - Finally
+    // Try - This will run the block of code until it encounters an error
+    // Catch - This will catch the error and run the block of code if an error occurs
+    // Finally - This will always run whether the code is successful or not
+    let data;
+    try {
+        console.log("Fetching data..."); // This will run even if the fetch fails
+        data = fetch(google.com); // This will throw an error
+        // data = fetch("https://www.google.com/"); // This will return the data but also throw errors because google blocked the request
+    } catch (e) {
+        console.log("Something went wrong:", e.message); // This will display the error message if failed
+
+        if (data == null) {
+            throw new Error("This is custom error message"); // This will throw a custom error
+        }
+
+        console.log("Data fetched successfully!"); // This will not run because the error is thrown already
+    } finally {
+        console.log("This will always run");
+        console.log("Fetching done.");
+        // if (data) {
+        //     alert("Data fetched successfully!");
+        // } else {
+        //     alert("Failed to fetch data!");
+        // }
+    }
+</script>
+<body>
+
+</body>
+</html>
