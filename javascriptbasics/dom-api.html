@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>DOM API</title>
 </head>
+
 <body>
-$END$
+<div>
+    <h1 id="myh1">Hello World</h1>
+    <p>Bye</p>
+
+    <form onsubmit="showName(event)">
+        <label>
+            Your Name
+            <input id="myName" placeholder="Enter your name">
+        </label>
+
+        <button type="submit">Submit</button>
+        <p id="show"></p>
+    </form>
+</div>
 </body>
+
+<script>
+    const myh1 = document.getElementById("myh1");
+    console.log(myh1.textContent);
+    myh1.textContent = "Hello Mayank";
+
+    const myName = document.getElementById("myName");
+
+    function showName(event) {
+        event.preventDefault();
+
+        console.log(myName.value);
+
+        const show = document.getElementById("show");
+        show.textContent = "Hello " + myName.value;
+    }
+</script>
 </html>
